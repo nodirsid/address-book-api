@@ -19,10 +19,11 @@ returned as JSON.
 ```mvnw springboot:run```
 
 # API Endpoints
-###### Search contacts using last name
+#### Search contacts using last name
 GET ```http://localhost:8090/api/v1/contacts/search?lastName={lastNameValue}```
-This endpoint returns ID numbers of contacts which last name matches with the query parameter {lastNameValue}. ID numbers are returned as an array. If no match is found, then empty array is returned.
+This endpoint searches the list of customers by their last name and returns ID numbers of found contacts. Last name is passed through a query string parameter ```lastName```. ID numbers are returned as an array. If no result is found, then empty array is returned.
 
 
-###### Get detailed information about contact
+#### Get detailed information about contact
 GET ```http://localhost:8090/api/v1/contacts/get?id={contactIdNumber}```
+This endpoint returns the full details of selected contact basedon their ID. ID number is passed through a query string parameter ```id```. Their full contact details are returned as JSON.
