@@ -1,5 +1,8 @@
 package com.moo.api.addressbookapi.model;
 
+import java.util.List;
+import java.util.Objects;
+
 public class Contact {
 
 	private Long id;
@@ -38,4 +41,20 @@ public class Contact {
 	public String getAddress() {
 		return address;
 	}
+	
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Contact contact = (Contact) o;
+        return Objects.equals(this.getFirstName(), contact.getFirstName()) &&
+                Objects.equals(this.getLastName(), contact.getLastName()) &&
+                Objects.equals(this.getAddress(), contact.getAddress()) &&
+                this.getAge() == contact.getAge();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, address, age);
+    }
 }
