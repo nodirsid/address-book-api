@@ -10,13 +10,13 @@ returned as JSON.
  - Maven
 
 ### Build
-```mvnw install```
+From the root directory of the project run ```mvnw install```
 
 ### Test
-```mvnw test```
+From the root directory of the project run ```mvnw test```
 
 ### Start
-```mvnw springboot:run```
+From the root directory of the project run ```mvnw springboot:run```
 
 # API Endpoints
 #### Search contacts using last name
