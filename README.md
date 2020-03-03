@@ -5,9 +5,9 @@ returned as JSON.
 # User manual
 
 ### System requirements
- - Spring boot
- - Java 8
- - Maven
+ - Spring Boot version 2.2.5 and up
+ - Java version 8 and up
+ - Maven version 3.6 and up
 
 ### Build
 From the root directory of the project run ```mvnw install```
