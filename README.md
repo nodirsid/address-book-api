@@ -9,8 +9,8 @@ returned as JSON.
  - Java version 8 and up
  - Maven version 3.6 and up
 
-### Build
-From the root directory of the project run ```mvnw install```
+### Compile
+From the root directory of the project run ```mvnw compile```
 
 ### Test
 From the root directory of the project run ```mvnw test```
