@@ -16,7 +16,7 @@ From the root directory of the project run ```mvnw compile```
 From the root directory of the project run ```mvnw test```
 
 ### Start
-From the root directory of the project run ```mvnw springboot:run```
+From the root directory of the project run ```mvnw spring-boot:run```
 
 # API Endpoints
 #### Search contacts using last name
